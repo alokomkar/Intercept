@@ -61,7 +61,6 @@ class SMSPresenter(private val mSmsView: SMSView, val contentResolver: ContentRe
             val cr = contentResolver
 
             val c = cr.query(message, null, null, null, null)
-            //startManagingCursor(c)
             val totalSMS = c!!.getCount()
             Log.d(TAG, "SMS : " + totalSMS)
 
@@ -108,7 +107,4 @@ class SMSPresenter(private val mSmsView: SMSView, val contentResolver: ContentRe
 
     }
 
-    private fun startManagingCursor(c: Cursor?) {
-        mSmsView.startManagingCursor(c)
-    }
 }

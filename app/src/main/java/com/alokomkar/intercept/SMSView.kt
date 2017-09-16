@@ -9,5 +9,4 @@ import android.database.Cursor
 interface SMSView : BaseView {
     fun onSuccess( smsListMap : HashMap<String, ArrayList<SMS>> )
     fun onFailure( error: String )
-    fun startManagingCursor(c: Cursor?)
 }

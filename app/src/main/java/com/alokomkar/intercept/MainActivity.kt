@@ -55,8 +55,4 @@ class MainActivity : AppCompatActivity(), SMSView {
     override fun dismissProgress() {
         progressLayout.visibility = View.GONE
     }
-
-    override fun startManagingCursor(c: Cursor?) {
-        startManagingCursor(c)
-    }
 }
