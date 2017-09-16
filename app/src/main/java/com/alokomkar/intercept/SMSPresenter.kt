@@ -91,7 +91,7 @@ class SMSPresenter(private val mSmsView: SMSView, val contentResolver: ContentRe
                         smsMap.get(objSms.smsAddress)!!.add(objSms)
                     }
                     Log.d(TAG, "SMS : " + objSms)
-                    objSms.save{}
+                    //objSms.save{}
                     c.moveToNext()
                 }
             }
