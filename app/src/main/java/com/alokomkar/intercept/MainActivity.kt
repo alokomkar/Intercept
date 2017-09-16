@@ -19,6 +19,9 @@ class MainActivity : AppCompatActivity(), SMSView {
         if (!handleMultiplePermission(this@MainActivity, permissionList)) {
             requestPermission(AppPermission.READ_SMS)
         }
+        else {
+            SMSPresenter(this, contentResolver)
+        }
 
     }
 
